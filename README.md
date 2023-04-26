@@ -4,7 +4,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Premier League ](#-premier-league-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -14,8 +14,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-  - [👥 Authors ](#-authors-)
-  - [👥 Kevin Toro](#-kevin-toro)
+  - [👥 Author : Kevin Toro](#-author--kevin-toro)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -133,8 +132,9 @@ If you like this project please give me a star⭐
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for providing design guidelines and template for this project
-I would like to thank [rapidAPI](https://rapidapi.com/developer/dashboard) for issuing a free plan to the football API which was used in this project
+I would like to thank [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for providing design guidelines and template for this project.
+
+I would like to thank [rapidAPI](https://rapidapi.com/developer/dashboard) for issuing a free plan to the football API which was used in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
