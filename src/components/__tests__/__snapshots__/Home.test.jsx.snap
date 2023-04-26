@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders correctly 1`] = `
+<div
+  class="heading-content"
+>
+  <img
+    alt="league stars"
+    class="world-image"
+    src="skysports.png"
+  />
+  <div
+    class="league-details"
+  >
+    <h2>
+      Season: 2022/2023
+    </h2>
+    <p>
+      Teams: 20
+    </p>
+  </div>
+</div>
+`;
