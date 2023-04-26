@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { render } from '@testing-library/react';
-import Home from '../routes/Home';
 import { BrowserRouter } from 'react-router-dom';
+import Home from '../routes/Home';
 import '@testing-library/jest-dom';
 
 jest.mock('react-redux', () => ({
-  useSelector: jest.fn()
+  useSelector: jest.fn(),
 }));
 
 describe('Home component', () => {
@@ -46,18 +46,18 @@ describe('Home component', () => {
       {
         Name: 'Team A',
         SquadLogo: 'team-a-logo.png',
-        Points: 50
+        Points: 50,
       },
       {
         Name: 'Team B',
         SquadLogo: 'team-b-logo.png',
-        Points: 40
-      }
+        Points: 40,
+      },
     ];
     useSelector.mockReturnValue({ league: mockLeague });
     const { getByText } = render(<BrowserRouter><Home /></BrowserRouter>);
 
-    mockLeague.forEach(team => {
+    mockLeague.forEach((team) => {
       expect(getByText(team.Name)).toBeInTheDocument();
       expect(getByText(`${team.Points} pts`)).toBeInTheDocument();
     });
@@ -67,13 +67,13 @@ describe('Home component', () => {
       {
         Name: 'Team A',
         SquadLogo: 'team-a-logo.png',
-        Points: 50
+        Points: 50,
       },
       {
         Name: 'Team B',
         SquadLogo: 'team-b-logo.png',
-        Points: 40
-      }
+        Points: 40,
+      },
     ];
     useSelector.mockReturnValue({ league: mockLeague });
     const { container } = render(<BrowserRouter><Home /></BrowserRouter>);
