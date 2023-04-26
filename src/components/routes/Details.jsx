@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams, NavLink } from 'react-router-dom';
 
@@ -6,6 +6,7 @@ const Details = () => {
   const params = useParams();
   const { league } = useSelector((state) => state.league);
   const team = league.find((team) => team.Name === params.teamName);
+  useEffect(() => window.scrollTo(0, 0), []);
   return (
     <>
       <div className="heading-content-details">
