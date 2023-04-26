@@ -22,24 +22,6 @@ const initialState = {
 const leagueSlice = createSlice({
   name: 'league',
   initialState,
-  reducers: {
-    joinMission: (state, missionId) => {
-      const newState = state.missions.map((mission) => {
-        if (mission.mission_id !== missionId.payload) return mission;
-
-        return { ...mission, reserved: true };
-      });
-      return { ...state, missions: newState };
-    },
-    leaveMission: (state, missionId) => {
-      const newState = state.missions.map((mission) => {
-        if (mission.mission_id !== missionId.payload) return mission;
-
-        return { ...mission, reserved: false };
-      });
-      return { ...state, missions: newState };
-    },
-  },
   extraReducers(builder) {
     builder.addCase(fetchLeague.fulfilled, (state, action) => {
       const receivedData = action.payload;
