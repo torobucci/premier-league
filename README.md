@@ -9,6 +9,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo](#live-demo)  
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -26,6 +27,8 @@
 # 📖 Premier League <a name="about-project"></a>
 
 Premier league is a SPA that displays premier league teams. Each team stats can be accessed separtely when clicked.
+
+Here is a [video](https://www.loom.com/share/4cc8ff0bd6fe480689f6e0e3779de1d8) presentation of the project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,6 +48,12 @@ Premier league is a SPA that displays premier league teams. Each team stats can 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Here is the link to the live demo version - [Premier League](https://premier-league-79q5.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
