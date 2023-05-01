@@ -7,6 +7,14 @@ const Details = () => {
   const { league } = useSelector((state) => state.league);
   const team = league.find((team) => team.Name === params.teamName);
   useEffect(() => window.scrollTo(0, 0), []);
+  if (!team) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner" />
+        <div className="loading-text">Loading...</div>
+      </div>
+    );
+  }
   return (
     <>
       <div className="heading-content-details">

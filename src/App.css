@@ -165,3 +165,48 @@ tr:nth-child(odd),
 tr:nth-child(odd) > * {
   background-color: rgb(79, 129, 221);
 }
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-left-color: rgb(36, 73, 141);
+  border-radius: 50%;
+  margin: 10% 25%;
+  height: 200px;
+  width: 200px;
+  animation: spin 1.5s linear infinite;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+
+.loading-text::after {
+  content: "";
+  display: inline-block;
+  animation: dots 3s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: ".";
+  }
+
+  33% {
+    content: "..";
+  }
+
+  66% {
+    content: "...";
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

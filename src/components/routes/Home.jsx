@@ -5,6 +5,15 @@ import photo from '../assets/skysports.png';
 
 const Home = () => {
   const { league } = useSelector((state) => state.league);
+  // console.log(league.leng);
+  // if (league.length === 0) {
+  //   return (
+  //     <div className="spinner-container">
+  //       <div className="spinner" />
+  //       <div className="loading-text">Loading...</div>
+  //     </div>
+  //   );
+  // }
   return (
     <>
       <div className="heading-content">
@@ -22,6 +31,13 @@ const Home = () => {
         <p>Stats by points</p>
       </div>
       <div className="contents">
+        {league.length === 0
+            && (
+            <div className="spinner-container">
+              <div className="spinner" />
+              <div className="loading-text">Loading...</div>
+            </div>
+            )}
         {league.map((team) => (
           <NavLink to={`/team/${team.Name}`} className="details-link" key={team.Name}>
             <div className="cont">
